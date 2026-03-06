@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.send('OneGuadalupeCebuStronghold API is running');
 });
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
+  });
+}
+
+module.exports = app;

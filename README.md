@@ -24,6 +24,16 @@ npm run dev
 
 Access `http://localhost:3000/health` to verify the server is running.
 
+## Testing
+
+A basic test suite ensures the health endpoint works. Run:
+
+```bash
+npm test
+```
+
+GitHub Actions will automatically execute this test on pushes and pull requests to `main`.
+
 ---
 
 Original README contents follow:
